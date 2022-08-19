@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Awesome'),
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      body: ListView(
+        // crossAxisAlignment: CrossAxisAlignment.stretch,
+        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: List.generate(
           taskList.length, (index) {
         return TaskContainer(task: taskList[index]);
